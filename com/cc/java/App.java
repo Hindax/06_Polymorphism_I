@@ -4,13 +4,17 @@ public class App {
 
     public static void main(String[] args) {
 
-        Worker worker = new Worker();
-        Queen queen = new Queen();
-        Drone drone = new Drone();
+        HoneyBee worker = new Worker();
+        HoneyBee queen = new Queen();
+        HoneyBee drone = new Drone();
 
         output(worker.doYourJob());
         output(queen.doYourJob());
         output(drone.doYourJob());
+
+
+        HoneyBee bee = new HoneyBee();
+        output(bee.doYourJob());
 
         output("-------------------------------");
 
@@ -20,6 +24,9 @@ public class App {
 
         output("-------------------------------");
 
+    }
+
+    public App() {
     }
 
     public static void output(String outputStr) {
